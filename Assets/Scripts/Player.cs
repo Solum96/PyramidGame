@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private float moveSpeed;
     [SerializeField]
     private float rotationSpeed;
+
     // Start is called before the first frame update
     void Start()
     {

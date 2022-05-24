@@ -13,6 +13,9 @@ public class MeteorSpawner : MonoBehaviour
     void Start()
     {
         _objectPooler = ObjectPooler.Instance;
+        var camera = Camera.main;
+        var cameraWidth = camera.orthographicSize * camera.aspect;
+        spawnWidth = cameraWidth;
     }
 
     // Update is called once per frame

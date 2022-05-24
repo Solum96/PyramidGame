@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3083112110606666653}
   - component: {fileID: 3083112110606666654}
   - component: {fileID: 3083112110606666655}
-  - component: {fileID: 3083112110606666652}
-  - component: {fileID: 3083112110606666723}
   - component: {fileID: 7239322260081882135}
+  - component: {fileID: 3083112110606666723}
+  - component: {fileID: 3083112110606666652}
+  - component: {fileID: -8922568848887786879}
   m_Layer: 0
   m_Name: Meteor
   m_TagString: Meteor
@@ -86,20 +87,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3083112110606666652
-MonoBehaviour:
+--- !u!64 &7239322260081882135
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3083112110606666650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e64003c95e27c7048802f9934d65af5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minFallSpeed: 3
-  maxFallSpeed: 6
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: b122bb72ed484c049ae13fe23d608148, type: 3}
 --- !u!108 &3083112110606666723
 Light:
   m_ObjectHideFlags: 0
@@ -162,17 +163,33 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!64 &7239322260081882135
-MeshCollider:
+--- !u!114 &3083112110606666652
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3083112110606666650}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: b122bb72ed484c049ae13fe23d608148, type: 3}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64003c95e27c7048802f9934d65af5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minFallSpeed: 3
+  maxFallSpeed: 6
+--- !u!54 &-8922568848887786879
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083112110606666650}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 8
+  m_CollisionDetection: 1

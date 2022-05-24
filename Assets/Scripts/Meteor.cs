@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Meteor : MonoBehaviour
+public class Meteor : MonoBehaviour, IPooledObject
 {
     [SerializeField]
     private float fallSpeed;
-    // Start is called before the first frame update
-    void Start()
+
+    public void OnObjectSpawn()
     {
         
     }
+
 
     // Update is called once per frame
     void Update()

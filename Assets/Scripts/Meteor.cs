@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Meteor : MonoBehaviour, IPooledObject
 {
-    [SerializeField]
+    public float minFallSpeed;
+    public float maxFallSpeed;
     private float fallSpeed;
 
     public void OnObjectSpawn()
     {
-        
+        fallSpeed = Random.Range(minFallSpeed, maxFallSpeed);
     }
 
 

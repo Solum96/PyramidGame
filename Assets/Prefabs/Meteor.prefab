@@ -111,7 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64003c95e27c7048802f9934d65af5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 1
+  minFallSpeed: 3
+  maxFallSpeed: 6
 --- !u!108 &3083112110606666723
 Light:
   m_ObjectHideFlags: 0

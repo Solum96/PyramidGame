@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Meteor"))
         {
-            Debug.Log("Ouch I died");
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }

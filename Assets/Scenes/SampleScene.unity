@@ -5054,8 +5054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ed0be733a30214bbe235dd51e4762b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userInterface: {fileID: 541222499}
-  gameOverText: {fileID: 0}
+  gameOverScreen: {fileID: 541222499}
 --- !u!4 &279326624
 Transform:
   m_ObjectHideFlags: 0
@@ -5085,7 +5084,7 @@ GameObject:
   - component: {fileID: 541222501}
   - component: {fileID: 541222500}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GameOverCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5597,12 +5596,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 169.6
-  m_fontSizeBase: 169.6
+  m_fontSize: 122.6
+  m_fontSizeBase: 122.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 116.5
-  m_fontSizeMax: 116.5
+  m_fontSizeMin: 40.8
+  m_fontSizeMax: 200
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

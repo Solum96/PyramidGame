@@ -6,17 +6,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public Canvas userInterface;
-    public TextMeshPro gameOverText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Canvas gameOverScreen;
 
-    // Update is called once per frame
-    void Update()
+    public void EndGame()
     {
-        
+        gameOverScreen.gameObject.SetActive(true);
     }
 }

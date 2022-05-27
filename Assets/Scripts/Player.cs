@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -10,9 +11,15 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float rotationSpeed;
 
+    InputMaster playerInputActions;
     private float xMin, xMax;
 
-    // Start is called before the first frame update
+    private void Awake()
+    { 
+        playerInputActions = new InputMaster();
+        playerInputActions.Enable();
+    }
+
     void Start()
     {
         var camera = Camera.main;
@@ -21,10 +28,9 @@ public class Player : MonoBehaviour
         xMax = cameraWidth;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        var moveInput = Input.GetAxis("Horizontal");
+        var moveInput = playerInputActions.Player.Movement.ReadValue<float>();
         if (moveInput != 0)
         {
             Move(moveInput);

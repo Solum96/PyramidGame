@@ -6,62 +6,107 @@
             "id": "a1aea195-7299-41a1-991f-456048cd1d51",
             "actions": [
                 {
-                    "name": "Move",
-                    "type": "Button",
+                    "name": "Movement",
+                    "type": "Value",
                     "id": "3af47f41-3a28-40bb-8253-4236771b7936",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "ad38d986-71bd-46ee-bf58-a0ab2a16a3ea",
-                    "path": "",
+                    "name": "wasd",
+                    "id": "ca84657f-d943-41e7-85b8-bc72c18972a9",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
+                    "action": "Movement",
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Horizontal",
-                    "id": "ca84657f-d943-41e7-85b8-bc72c18972a9",
+                    "name": "Negative",
+                    "id": "5c9c44f3-1ff9-43a2-933a-3f3786036372",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "98316228-15da-4c68-a317-5f5d03a08351",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "arrowkeys",
+                    "id": "1fee0435-c62a-4ccf-bd5d-2af5a47b44d4",
                     "path": "1DAxis",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Movement",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "negative",
-                    "id": "5c9c44f3-1ff9-43a2-933a-3f3786036372",
-                    "path": "<Keyboard>/a",
+                    "id": "e1698f9d-f907-498d-bf3d-d0a2f9db8888",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "Move",
+                    "groups": "Keyboard",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "positive",
-                    "id": "98316228-15da-4c68-a317-5f5d03a08351",
-                    "path": "<Keyboard>/d",
+                    "id": "0b3e7f3b-ab21-4d9a-a4eb-046056cb68de",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "Move",
+                    "groups": "Keyboard",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "TouchScreen",
+            "bindingGroup": "TouchScreen",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }

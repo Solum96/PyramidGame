@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,6 +33,10 @@ public class GameManager : MonoBehaviour
 
         scoreText.text = pointsHandler.points.ToString();
         SetHighScore(pointsHandler.points);
+
+        pointsHandler.enabled = false;
+        FindObjectOfType<MeteorSpawner>().enabled = false;
+        var meteors = FindObjectsOfType<Meteor>();
     }
 
     private void SetHighScore(int points)

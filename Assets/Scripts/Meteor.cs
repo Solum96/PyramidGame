@@ -10,7 +10,7 @@ public class Meteor : MonoBehaviour, IPooledObject
     public float maxRotationSpeed;
     private float fallSpeed;
     private float rotationSpeed;
-    public Rigidbody rigidbody;
+    public Rigidbody rb;
     
 
     void Start()
@@ -27,9 +27,9 @@ public class Meteor : MonoBehaviour, IPooledObject
         var zRot = Random.Range(-1, 1);
         var rotationVector = new Vector3(xRot, yRot, zRot) * rotationSpeed;
 
-        if(rigidbody != null)
+        if(rb != null)
         {
-            rigidbody.AddTorque(rotationVector);
+            rb.AddTorque(rotationVector);
         }
     }
 

@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3083112110606666650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.11, y: 7.43, z: 0.006815672}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.5, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 702028205422479848}
@@ -176,11 +176,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64003c95e27c7048802f9934d65af5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minFallSpeed: 3
-  maxFallSpeed: 6
-  minRotationSpeed: 1
-  maxRotationSpeed: 10
-  rigidbody: {fileID: -8922568848887786879}
+  minFallSpeed: 5
+  maxFallSpeed: 7
+  minRotationSpeed: 3
+  maxRotationSpeed: 6
+  rb: {fileID: -8922568848887786879}
 --- !u!54 &-8922568848887786879
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -223,8 +223,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3712661953899603574}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -1.07, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3083112110606666653}
@@ -313,7 +313,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2

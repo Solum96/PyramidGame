@@ -5654,7 +5654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16d3d93b9ced6e84ebbcf05a6e0462ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnCooldown: 4
+  spawnCooldown: 3
   spawnWidth: 3
 --- !u!4 &847378332
 Transform:
